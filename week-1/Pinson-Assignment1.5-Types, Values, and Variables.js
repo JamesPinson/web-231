@@ -1,6 +1,6 @@
 /*
 
-Title: Pinson-Assignment1.5-Types, Values, and Variables
+Title: Pinson - Assignment1.5 - Types, Values, and Variables
 Author: James Pinson
 Date: 22 October 2020
 Description: Solution to assign and output variable values
@@ -31,13 +31,9 @@ var twoPayRate= 17.49.toFixed(1) ;
 var twoHireDate= new Date(2018, 9, 13).toLocaleDateString('en-GB');
 
 var threeFirstName= 'Samantha';
-
 var threeLastName= 'Rose';
-
 var threeAddress= '691 Johnson St.';
-
 var threePayRate=  20.85.toFixed(1);
-
 var threeHireDate= new Date(2019, 1, 20).toLocaleDateString('en-GB');
 
 //output
