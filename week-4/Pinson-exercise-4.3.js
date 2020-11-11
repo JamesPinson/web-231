@@ -16,12 +16,12 @@ const header = require('./Pinson-Header.js');
 
 
 //This is were we assign the variables to vehicles. 
-var vehicles = ["Car", "Truck", "Motorcycle", "Airplane", "Bus"];
+const vehicles = ["Car", "Truck", "Motorcycle", "Airplane", "Bus"];
 
 
 //This is the function that generates the value for our array items.
 function getValue(arr, val) {
-    for (var k = 0; k < arr.length; k++) {
+    for (let k = 0; k < arr.length; k++) {
         if (arr[k] === val)
             console.log(arr[k]);
     }

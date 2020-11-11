@@ -16,13 +16,13 @@ const header = require('./Pinson-Header.js');
 
 
 //This is were we assign the string array to the  variable fruits. 
-var fruits = ["Apple", "Orange", "Banana", "Mango", "Pear"];
+const fruits = ["Apple", "Orange", "Banana", "Mango", "Pear"];
 
 
 
 //The function is created to display the array when called. 
 function getFruit(arr){
-    for(var k = 0; k < arr.length; k++){
+    for(let k = 0; k < arr.length; k++){
         console.log(arr[k]);
     }
 

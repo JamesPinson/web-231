@@ -16,14 +16,14 @@ const header = require('./Pinson-Header.js');
 
 
 //This is were we assign the string array to the variable states.
-var states = ["Alabama", "Nebraska", "Iowa", "California", "Nevada"];
+const states = ["Alabama", "Nebraska", "Iowa", "California", "Nevada"];
 
 
 //This function is there to return the value that matches el. 
 function getState(el, value){
     return el === value
     }
-    
+
 
 //This is used to call the assignment header. 
 console.log(header.display('James', 'Pinson', 'Exercise-4.4',) + "\r\n");
