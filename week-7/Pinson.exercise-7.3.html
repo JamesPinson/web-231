@@ -1,0 +1,58 @@
+<!--
+============================================
+; Title: Pinson-Exercise 7.3.js
+; Author: Richard Krasso
+; Date: December 6th 2020
+; Modified By: James Pinson
+; Description: This exercise teaches us how to embed client side JavaScript into HTML documents using the script method. 
+;============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body>
+
+<!-- This uses the document.write function to create an ordered shopping list.  -->
+<script>
+    document.write("<h1>SHOPPING LIST v.1</h1>");
+    document.write("<ol>");
+    document.write("<li>Oranges</li>");
+    document.write("<li>Apples</li>");
+    document.write("<li>Pears</li>");
+    document.write("<li>Limes</li>");
+    document.write("<li>Lemons</li>");
+    document.write("</ol>");
+</script>
+
+<div id="list"></div>
+
+<!-- This uses the getElementById function to create a table for the shopping list.  -->
+<script>
+document.getElementById('list').innerHTML = "<h1>SHOPPING LIST v.2</h1>" +
+  "<table>" +
+  "<thead>" +
+  "<tr>" +
+  "<th>Id</th>" + "<th> Item</th>" +
+  "</tr>" +
+  "</thead>" +
+  "<tbody>" +
+  "<tr><td>1</td> <td>Oranges</td></tr>" +
+  "<tr><td>2</td> <td>Apples</td></tr>" +
+  "<tr><td>3</td> <td>Pears</td></tr>" +
+  "<tr><td>4</td> <td>Limes</td></tr>" +
+  "<tr><td>5</td> <td>Lemons</td></tr>" +
+  "</tbody>" +
+  "</table>"
+
+</script>
+
+
+</body>
+</html>
