@@ -1,0 +1,82 @@
+<!--
+============================================
+; Title: Pinson-Exercise 8.3.html
+; Author: Richard Krasso
+; Date: December 10th 2020
+; Modified By: James Pinson
+; Description: This exercise teaches us how to use jquery to call for different events. 
+;============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- This is the root for my css file.  -->
+  <link rel="stylesheet" href="style.css">
+  <script>
+  //This creates a click function to toggle the paragraph when the toggle button is clicked. 
+    $(document).ready(function() {
+              $("button").click(function() {
+                  $("div.p1").toggle();
+              });
+              
+  //This creates a click function to show an alert when an id number is clicked that shows the id and fruit type. 
+              $(".fruitId").click(function (event) {
+                  event.preventDefault();
+                  var fruitId = $(this).text();
+                  var fruitType = $(this).closest("td").next().text();
+                  alert("{fruit_id: " + fruitId + ", fruit_type: " + fruitType + "}");
+              });
+        });
+            
+    
+    </script>
+</head>
+<body>
+
+<div class="navbar"></div>
+
+<div class="body">
+<h1>Title of Paragraph</h1>
+
+
+<div class="p1">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor diam velit, at dapibus nisi ultrices sed. Nullam eu enim a nisl mattis convallis. Nunc nec viverra ex. Fusce vitae augue nisi. Praesent efficitur ultrices egestas. Duis id eleifend urna, quis venenatis ipsum. Vestibulum sagittis cursus fermentum. Aenean sodales quis orci nec luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque maximus aliquam turpis sit amet consectetur. Quisque in feugiat eros, at pretium dolor. Vestibulum gravida nec ante non lobortis. Vivamus ultrices malesuada erat, et pulvinar augue vestibulum eu. </p>
+</div>
+
+
+<button>Toggle</button>
+<br>
+<br>
+<table>
+    <tr>
+        <td><a href="#" class="fruitId">1</a></td>
+        <td>Apple</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">2</a></td>
+        <td>Orange</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">3</a></td>
+        <td>Banana</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">4</a></td>
+        <td>Grapes</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">5</a></td>
+        <td>Watermelon</td>
+    </tr>
+</table>
+</div>
+
+</body>
+</html>

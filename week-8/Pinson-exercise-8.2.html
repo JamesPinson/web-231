@@ -1,0 +1,82 @@
+<!--
+============================================
+; Title: Pinson-Exercise 8.2.html
+; Author: Richard Krasso
+; Date: December 10th 2020
+; Modified By: James Pinson
+; Description: This exercise teaches how to use javascript in order to create and manipulate html content based on data collection.
+;============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+ <!-- This is my css styling for this html page. The padding is 70 to calculate the height of the top bar making the content 20px below the top bar. -->
+<style>
+    .navbar{
+        overflow: hidden;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 50px;
+    }
+
+    ul{
+        margin: auto;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif; ;
+    }
+   
+    h1{
+        padding-top: 70px;
+    }
+</style>
+ <!-- This is the div to create and style the top bar.  -->
+<div class="navbar"></div>
+
+
+<div class="title">Fruit List</div>
+
+<div id="fruits"></div>
+
+
+<script>
+//This is my function that iterates over my array.
+function Fruit(id,type) {
+    this.id = id;
+    this.type = type;
+}
+
+//This is my array of fruits with an id and type. 
+    const fruits= [
+        new Fruit("1","Apple"),
+        new Fruit("2","Orange"),
+        new Fruit("3","Banana"),
+        new Fruit("4","Grapes"),
+        new Fruit("5","Watermelon")
+    ];
+
+//This generates my output of fruits in an unordered list.
+    let output = "<h1> FRUIT LIST </h1> <u1>"
+        for(const Fruit of fruits)
+        {
+            output +=  "<li> " + Fruit.id + " " + Fruit.type + " </li>"
+        }
+        output += "</ul>";
+
+        console.log(output);
+
+        document.getElementById("fruits").innerHTML=output;
+
+
+</script>
+
+</body>
+</html>
