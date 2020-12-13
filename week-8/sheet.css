@@ -1,0 +1,35 @@
+#emps {
+  text-align: left;
+  padding-left: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  padding-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+th {
+  background-color: steelblue;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: lightsteelblue;
+}
+
+#emps tbody tr:hover {
+  cursor: pointer;
+  background-color: yellow;
+}
